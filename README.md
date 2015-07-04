@@ -14,7 +14,7 @@ If you want to know how to configure your devkitPro environment. Please look at 
 ### ctrulib enviroment
 If you have succeed to configure the devkitPro environment. The ctrulib will be easy. Look at [here](./doc/ctrulib.md)!
 ### citra
-The citra emulator is a well-developed emulator for nintendo envoronment.[Here](./doc/ctrulib.md) is a good way for installing it.
+The citra emulator is a well-developed emulator for nintendo envoronment.[Here](./doc/citra.md) is a good way for installing it.
 ### About Piggy
 Copyright 2015 ZandyWho.
 
