@@ -64,8 +64,8 @@ int main()
 {
 	srvInit();	
 	aptInit();
-	hidInit(NULL);
-	irrstInit(NULL);
+	hidInit();
+	irrstInit();
 	gfxInitDefault();
 
 	piggy_init(
@@ -95,12 +95,14 @@ int main()
 		piggyUpdateKeyboard(&piggy);
 		game_tick(&piggy);
 
-		if(hidKeysDown()&KEY_START)break;
+		if(hidKeysDown()&KEY_START)
+			break;
 
 		gfxFlushBuffers();
 		gfxSwapBuffers();
 
-		gspWaitForEvent(GSPEVENT_VBlank0, true);
+		//gspWaitForEvent(GSPEVENT_VBlank0, true);
+		gspWaitForVBlank();
 	}
 
 	gfxExit();
